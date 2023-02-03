@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="co.zip.candidate.userapi.controller.UserApiControllerTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-02-03T00:22:34" hostname="AUkomalkaur.hub" time="0.149">
+  <properties/>
+  <testcase name="shouldReturnEmptyListWhenNoUsers()" classname="co.zip.candidate.userapi.controller.UserApiControllerTests" time="0.015"/>
+  <testcase name="shouldCreateUser()" classname="co.zip.candidate.userapi.controller.UserApiControllerTests" time="0.037"/>
+  <testcase name="shouldGetUser()" classname="co.zip.candidate.userapi.controller.UserApiControllerTests" time="0.025"/>
+  <testcase name="shouldNotCreateUserWhenValidationFails()" classname="co.zip.candidate.userapi.controller.UserApiControllerTests" time="0.025"/>
+  <testcase name="shouldNotReturnUserWhenNotFound()" classname="co.zip.candidate.userapi.controller.UserApiControllerTests" time="0.008"/>
+  <testcase name="shouldNotCreateUserWhenUserAlreadyExists()" classname="co.zip.candidate.userapi.controller.UserApiControllerTests" time="0.014"/>
+  <testcase name="shouldListsUser()" classname="co.zip.candidate.userapi.controller.UserApiControllerTests" time="0.017"/>
+  <system-out><![CDATA[2023-02-03 11:22:33.579  INFO 20184 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [co.zip.candidate.userapi.controller.UserApiControllerTests], using SpringBootContextLoader
+2023-02-03 11:22:33.581  INFO 20184 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [co.zip.candidate.userapi.controller.UserApiControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-02-03 11:22:33.581  INFO 20184 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [co.zip.candidate.userapi.controller.UserApiControllerTests]: UserApiControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-02-03 11:22:33.585  INFO 20184 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration co.zip.candidate.userapi.UserApiApplication for test class co.zip.candidate.userapi.controller.UserApiControllerTests
+2023-02-03 11:22:33.585  INFO 20184 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-02-03 11:22:33.586  INFO 20184 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5ca22e19, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@29d3d0fb, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1bfa3893, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@70f85235, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3d6778d5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@a84338a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4070ace9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@722b2728, org.springframework.test.context.event.EventPublishingTestExecutionListener@740c4868, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5f3f3d00, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1a6dc5ea, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@31d4b3e8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@278de2b2, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1fc1c7e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@75cacb3e]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.1)
+
+2023-02-03 11:22:33.619  INFO 20184 --- [    Test worker] c.z.c.u.c.UserApiControllerTests         : Starting UserApiControllerTests using Java 17.0.5 on AUkomalkaur.hub with PID 20184 (started by komal in /Users/komal/Documents/kpk/Random/ZipCoJavaEngineerTest/UserApi)
+2023-02-03 11:22:33.619  INFO 20184 --- [    Test worker] c.z.c.u.c.UserApiControllerTests         : No active profile set, falling back to default profiles: default
+2023-02-03 11:22:34.235  INFO 20184 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-02-03 11:22:34.236  INFO 20184 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-02-03 11:22:34.236  INFO 20184 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-02-03 11:22:34.254  INFO 20184 --- [    Test worker] c.z.c.u.c.UserApiControllerTests         : Started UserApiControllerTests in 0.663 seconds (JVM running for 5.056)
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /getUsers
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = co.zip.candidate.userapi.controller.UserApiController
+           Method = co.zip.candidate.userapi.controller.UserApiController#listUsers()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = []
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /user
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Accept:"application/json", Content-Length:"104"]
+             Body = {"id":1,"name":"testuser","emailId":"testuser@test.com","monthlySalary":2000.54,"monthlyExpenses":500.5}
+    Session Attrs = {}
+
+Handler:
+             Type = co.zip.candidate.userapi.controller.UserApiController
+           Method = co.zip.candidate.userapi.controller.UserApiController#createUser(User)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = []
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /getUser
+       Parameters = {emailId=[testuser1@test.com]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = co.zip.candidate.userapi.controller.UserApiController
+           Method = co.zip.candidate.userapi.controller.UserApiController#getUser(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":1,"name":"testuser","emailId":"testuser@test.com","monthlySalary":2000.54,"monthlyExpenses":500.5}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /user
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Accept:"application/json", Content-Length:"88"]
+             Body = {"id":null,"name":null,"emailId":null,"monthlySalary":-2000.54,"monthlyExpenses":-500.5}
+    Session Attrs = {}
+
+Handler:
+             Type = co.zip.candidate.userapi.controller.UserApiController
+           Method = co.zip.candidate.userapi.controller.UserApiController#createUser(User)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.web.bind.MethodArgumentNotValidException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"validation errors":["monthlyExpenses must be greater than or equal to 0","name must not be blank","emailId must not be null","monthlySalary must be greater than or equal to 0"]}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /getUser
+       Parameters = {emailId=[testuser1@test.com]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = co.zip.candidate.userapi.controller.UserApiController
+           Method = co.zip.candidate.userapi.controller.UserApiController#getUser(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = co.zip.candidate.userapi.exception.UserNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=UTF-8", Content-Length:"48"]
+     Content type = text/plain;charset=UTF-8
+             Body = User is not found for emailId testuser1@test.com
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /user
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Accept:"application/json", Content-Length:"104"]
+             Body = {"id":1,"name":"testuser","emailId":"testuser@test.com","monthlySalary":2000.54,"monthlyExpenses":500.5}
+    Session Attrs = {}
+
+Handler:
+             Type = co.zip.candidate.userapi.controller.UserApiController
+           Method = co.zip.candidate.userapi.controller.UserApiController#createUser(User)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = co.zip.candidate.userapi.exception.ResourceExistsException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 409
+    Error message = null
+          Headers = [Content-Type:"application/json", Content-Length:"50"]
+     Content type = application/json
+             Body = User already exists with emailId testuser@test.com
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /getUsers
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = co.zip.candidate.userapi.controller.UserApiController
+           Method = co.zip.candidate.userapi.controller.UserApiController#listUsers()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"id":1,"name":"testuser","emailId":"testuser1@test.com","monthlySalary":2000.54,"monthlyExpenses":500.5},{"id":2,"name":"testuser","emailId":"testuser2@test.com","monthlySalary":2000.54,"monthlyExpenses":500.5}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

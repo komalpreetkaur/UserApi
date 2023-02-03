@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  mysql:
+    image: mysql:8
+    container_name: userapi-mysql-db
+    environment:
+      MYSQL_DATABASE: "db_userapi"
+      MYSQL_ROOT_PASSWORD: YourStrong@Passw0rd
+    ports:
+      - "3306:3306"

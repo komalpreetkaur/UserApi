@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - AccountApiControllerTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>AccountApiControllerTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/co.zip.candidate.userapi.controller.html">co.zip.candidate.userapi.controller</a> &gt; AccountApiControllerTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.443s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">shouldCreateAccount()</td>
+<td class="success">0.019s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldListsAccounts()</td>
+<td class="success">0.036s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldNotCreateAccountWhenAccountAlreadyExists()</td>
+<td class="success">0.018s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldNotCreateAccountWhenBalanceLowerThan1000()</td>
+<td class="success">0.341s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldNotCreateAccountWhenUserNotFound()</td>
+<td class="success">0.017s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnEmptyListWhenNoAccounts()</td>
+<td class="success">0.012s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>11:22:30.369 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+11:22:30.378 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+11:22:30.423 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [co.zip.candidate.userapi.controller.AccountApiControllerTests] from class [org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper]
+11:22:30.435 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [co.zip.candidate.userapi.controller.AccountApiControllerTests], using SpringBootContextLoader
+11:22:30.439 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [co.zip.candidate.userapi.controller.AccountApiControllerTests]: class path resource [co/zip/candidate/userapi/controller/AccountApiControllerTests-context.xml] does not exist
+11:22:30.440 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [co.zip.candidate.userapi.controller.AccountApiControllerTests]: class path resource [co/zip/candidate/userapi/controller/AccountApiControllerTestsContext.groovy] does not exist
+11:22:30.440 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [co.zip.candidate.userapi.controller.AccountApiControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+11:22:30.441 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [co.zip.candidate.userapi.controller.AccountApiControllerTests]: AccountApiControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:22:30.520 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [co.zip.candidate.userapi.controller.AccountApiControllerTests]
+11:22:30.600 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/komal/Documents/kpk/Random/ZipCoJavaEngineerTest/UserApi/build/classes/java/main/co/zip/candidate/userapi/UserApiApplication.class]
+11:22:30.601 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration co.zip.candidate.userapi.UserApiApplication for test class co.zip.candidate.userapi.controller.AccountApiControllerTests
+11:22:30.604 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - @TestExecutionListeners is not present for class [co.zip.candidate.userapi.controller.AccountApiControllerTests]: using defaults.
+11:22:30.605 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+11:22:30.625 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1ae67cad, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2f6e28bc, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7c098bb3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@31e4bb20, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@18cebaa5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@463b4ac8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@765f05af, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@62f68dff, org.springframework.test.context.event.EventPublishingTestExecutionListener@f001896, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13f17eb4, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1d0d6318, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4bc28c33, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4409e975, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5c153b9e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2a7686a7]
+11:22:30.628 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@6b44435b testClass = AccountApiControllerTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2ccca26f testClass = AccountApiControllerTests, locations = '{}', classes = '{class co.zip.candidate.userapi.UserApiApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@ab7395e, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@64a40280, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@f92aa63c, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@34c5c30b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6138e79a, [ImportsContextCustomizer@66b7550d key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3f270e0a, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@70f59913, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@454a7d2a, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+11:22:30.684 [Test worker] DEBUG org.springframework.boot.ApplicationServletEnvironment - Activating profiles []
+11:22:30.709 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.1)
+
+2023-02-03 11:22:31.084  INFO 20184 --- [    Test worker] c.z.c.u.c.AccountApiControllerTests      : Starting AccountApiControllerTests using Java 17.0.5 on AUkomalkaur.hub with PID 20184 (started by komal in /Users/komal/Documents/kpk/Random/ZipCoJavaEngineerTest/UserApi)
+2023-02-03 11:22:31.085  INFO 20184 --- [    Test worker] c.z.c.u.c.AccountApiControllerTests      : No active profile set, falling back to default profiles: default
+2023-02-03 11:22:33.059  INFO 20184 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-02-03 11:22:33.060  INFO 20184 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-02-03 11:22:33.061  INFO 20184 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-02-03 11:22:33.105  INFO 20184 --- [    Test worker] c.z.c.u.c.AccountApiControllerTests      : Started AccountApiControllerTests in 2.393 seconds (JVM running for 3.907)
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /account
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Accept:&quot;application/json&quot;, Content-Length:&quot;49&quot;]
+             Body = {&quot;userEmailId&quot;:&quot;testuser1@test.com&quot;,&quot;credit&quot;:500}
+    Session Attrs = {}
+
+Handler:
+             Type = co.zip.candidate.userapi.controller.AccountApiController
+           Method = co.zip.candidate.userapi.controller.AccountApiController#createAccount(AccountModel)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = co.zip.candidate.userapi.exception.AccountNotCreatedException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;, Content-Length:&quot;70&quot;]
+     Content type = application/json
+             Body = Due to balance less than $1000, account not created for user with id 1
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /account
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Accept:&quot;application/json&quot;, Content-Length:&quot;49&quot;]
+             Body = {&quot;userEmailId&quot;:&quot;testuser1@test.com&quot;,&quot;credit&quot;:500}
+    Session Attrs = {}
+
+Handler:
+             Type = co.zip.candidate.userapi.controller.AccountApiController
+           Method = co.zip.candidate.userapi.controller.AccountApiController#createAccount(AccountModel)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = co.zip.candidate.userapi.exception.UserNotFoundException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;, Content-Length:&quot;48&quot;]
+     Content type = application/json
+             Body = User is not found for emailId testuser1@test.com
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /account
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Accept:&quot;application/json&quot;, Content-Length:&quot;49&quot;]
+             Body = {&quot;userEmailId&quot;:&quot;testuser1@test.com&quot;,&quot;credit&quot;:500}
+    Session Attrs = {}
+
+Handler:
+             Type = co.zip.candidate.userapi.controller.AccountApiController
+           Method = co.zip.candidate.userapi.controller.AccountApiController#createAccount(AccountModel)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = []
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /account
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Accept:&quot;application/json&quot;, Content-Length:&quot;49&quot;]
+             Body = {&quot;userEmailId&quot;:&quot;testuser1@test.com&quot;,&quot;credit&quot;:500}
+    Session Attrs = {}
+
+Handler:
+             Type = co.zip.candidate.userapi.controller.AccountApiController
+           Method = co.zip.candidate.userapi.controller.AccountApiController#createAccount(AccountModel)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = co.zip.candidate.userapi.exception.ResourceExistsException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 409
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;, Content-Length:&quot;32&quot;]
+     Content type = application/json
+             Body = Account already exists with Id 1
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /getAccounts
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = co.zip.candidate.userapi.controller.AccountApiController
+           Method = co.zip.candidate.userapi.controller.AccountApiController#listAccounts()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = [{&quot;id&quot;:1,&quot;credit&quot;:1000.0,&quot;user&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;testuser&quot;,&quot;emailId&quot;:&quot;testuser1@test.com&quot;,&quot;monthlySalary&quot;:2000.54,&quot;monthlyExpenses&quot;:500.5}},{&quot;id&quot;:2,&quot;credit&quot;:500.0,&quot;user&quot;:{&quot;id&quot;:2,&quot;name&quot;:&quot;testuser&quot;,&quot;emailId&quot;:&quot;testuser2@test.com&quot;,&quot;monthlySalary&quot;:2000.54,&quot;monthlyExpenses&quot;:500.5}}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /getAccounts
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = co.zip.candidate.userapi.controller.AccountApiController
+           Method = co.zip.candidate.userapi.controller.AccountApiController#listAccounts()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = []
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.3.1</a> at 3 Feb 2023, 11:22:34 am</p>
+</div>
+</div>
+</body>
+</html>
