@@ -27,6 +27,8 @@
 
 ## Building and Deploying
 
+This project is build on Java 8 and Spring Boot 2.6. Install Java 8 before on your machine before building.
+
 #### Local setup for development
 1. Clone the project on you local machine.
 2. Open and setup in IntelliJ
